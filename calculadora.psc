@@ -1,4 +1,4 @@
-Funcion operacion <- menu ( 1,2,3,4,5 )
+Funcion operacion <- menu
 	Definir eleccion, resultado Como Entero
 	Mientras eleccion<>5 Hacer
 		indicaciones <- lista_de_opciones
@@ -10,13 +10,13 @@ Funcion operacion <- menu ( 1,2,3,4,5 )
 			2:
 				r_resta <- resta
 			3:
-				r_multiplicación <- multiplicación
+				r_multiplicaciÃ³n <- multiplicaciÃ³n
 			4:
-				r_división <- división
+				r_divisiÃ³n <- divisiÃ³n
 			5:
 				Escribir "Sliendo"
 			De Otro Modo:
-				Escribir "Opción inválida, aténgase al menú:"
+				Escribir "OpciÃ³n invÃ¡lida, atÃ©ngase al menÃº:"
 		Fin Segun
 	Fin Mientras
 Fin Funcion
@@ -26,8 +26,8 @@ Funcion indicaciones <- lista_de_opciones
 	Escribir "____________________________"
 	Escribir "1.......SUMA"
 	Escribir "2.......RESTA"
-	Escribir "3.......MULTIPLICACIÓN"
-	Escribir "4.......DIVISIÓN"
+	Escribir "3.......MULTIPLICACIÃ“N"
+	Escribir "4.......DIVISIÃ“N"
 	Escribir " "
 	Escribir "5.......SALIR"
 	Escribir "____________________________"
@@ -36,9 +36,9 @@ Fin Funcion
 
 Funcion r_suma <- suma
 	Definir A,B Como Real
-	Escribir "Ingrese el primer número"
+	Escribir "Ingrese el primer nÃºmero"
 	Leer A
-	Escribir "Ingrese el segundo número"
+	Escribir "Ingrese el segundo nÃºmero"
 	Leer B
 	r_suma<-A+B
 	Escribir "SUMA: " A " + " B " = " r_suma
@@ -46,40 +46,40 @@ Fin Funcion
 
 Funcion r_resta <- resta
 	Definir A,B Como Real
-	Escribir "Ingrese el primer número"
+	Escribir "Ingrese el primer nÃºmero"
 	Leer A
-	Escribir "Ingrese el segundo número"
+	Escribir "Ingrese el segundo nÃºmero"
 	Leer B
 	r_resta<-A-B
 	Escribir "RESTA: " A " - " B " = " r_resta
 Fin Funcion
 
-Funcion r_multiplicación <- multiplicación
+Funcion r_multiplicaciÃ³n <- multiplicaciÃ³n
 	Definir A,B Como Real
-	Escribir "Ingrese el primer número"
+	Escribir "Ingrese el primer nÃºmero"
 	Leer A
-	Escribir "Ingrese el segundo número"
+	Escribir "Ingrese el segundo nÃºmero"
 	Leer B
-	r_multiplicación<-A*B
-	Escribir "MULTIPLICACIÓN: " A " * " B " = " r_multiplicación
+	r_multiplicaciÃ³n<-A*B
+	Escribir "MULTIPLICACIÃ“N: " A " * " B " = " r_multiplicaciÃ³n
 Fin Funcion
 
-Funcion r_división <- división
+Funcion r_divisiÃ³n <- divisiÃ³n
 	Definir A,B Como Real
-	Escribir "Ingrese el primer número"
+	Escribir "Ingrese el primer nÃºmero"
 	Leer A
-	Escribir "Ingrese el segundo número"
+	Escribir "Ingrese el segundo nÃºmero"
 	Leer B
 	Mientras B==0 Hacer
-		Escribir  "No se puede hacer la operación, ingrese otro número diferente a 0"
-		Escribir  Sin Saltar "Ingrese otro número"
+		Escribir  "No se puede hacer la operaciÃ³n, ingrese otro nÃºmero diferente a 0"
+		Escribir  Sin Saltar "Ingrese otro nÃºmero"
 		Leer B
 	Fin Mientras
-	r_división<-A/B
-	Escribir "DIVISIÓN: " A " / " B " = " r_división	
+	r_divisiÃ³n<-A/B
+	Escribir "DIVISIÃ“N: " A " / " B " = " r_divisiÃ³n	
 Fin Funcion
 
 
 Algoritmo main
-	operacion <- menu ( 1,2,3,4,5 )
+	operacion <- menu
 FinAlgoritmo
